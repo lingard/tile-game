@@ -1,0 +1,81 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #11e8bb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #3B206C 0%, #FDA5D2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #3B206C 0%,#FDA5D2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #3B206C 0%,#FDA5D2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  width: 520px;
+}
+
+  .menu__item {
+    display: block;
+    padding: 2.2rem 3rem 1.5rem 3rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.65);
+    }
+  }
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 200px;
+  position: absolute;
+  width: 320px;
+  right: 80px;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  pointer-events: none;
+}
+
+  .scoreboard__row {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.75);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+    font-size: 24px;
+    padding: 1rem;
+  }
